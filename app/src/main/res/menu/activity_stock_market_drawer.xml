@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_twitter"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Twitter" />
+        <item
+            android:id="@+id/nav_cheatsheet"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Cheatsheet" />
+        <item
+            android:id="@+id/nav_strategiearea"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Strategie Area" />
+        <item
+            android:id="@+id/nav_stockmarket"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Börse" />
+        <item
+            android:id="@+id/nav_stockmarkettools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Börsen Tools" />
+    </group>
+
+</menu>
