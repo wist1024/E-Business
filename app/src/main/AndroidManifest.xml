@@ -41,6 +41,10 @@
             android:name=".StockMarketToolsActivity"
             android:label="@string/title_activity_stock_market_tools"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e95909373fa48a27d8d992744480b317915f9942" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
