@@ -94,7 +94,15 @@ public class CheatsheetActivity extends AppCompatActivity
             Intent intent = new Intent(this, StockMarketToolsActivity.class);
             startActivity(intent);
             finish();
-        }
+        } else if (id == R.id.nav_settings) {
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                finish();
+        }  else if(id == R.id.nav_rss) {
+        Intent intent = new Intent(this, RssReaderActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

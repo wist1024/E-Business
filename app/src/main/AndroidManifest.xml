@@ -51,6 +51,28 @@
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
+        <activity
+            android:name=".RssReaderActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".StockMarketListActivity"
+            android:label="@string/title_stockmarket_list"
+            android:parentActivityName=".StockMarketActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ebusiness.group.ebusiness.StockMarketActivity" />
+        </activity>
+        <activity
+            android:name=".StockMarketDetailActivity"
+            android:label="@string/title_stockmarket_detail"
+            android:parentActivityName=".StockMarketListActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ebusiness.group.ebusiness.StockMarketListActivity" />
+        </activity>
     </application>
 
 </manifest>
