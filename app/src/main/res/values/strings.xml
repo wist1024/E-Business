@@ -101,6 +101,7 @@
     <string name="sendButton">send</string>
     <string name="title_stockmarket_list">Items</string>
     <string name="title_stockmarket_detail">StockMarket Detail</string>
+    <string name="shareFragment">share</string>
 
     <string-array name="shareNames">
         <item>Share</item>
