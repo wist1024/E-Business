@@ -51,18 +51,6 @@ public class StockMarketToolsActivity extends AppCompatActivity
             }
         });
     }
-        /*
-        final Button button = (Button) findViewById(R.id.buttonv);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                Intent intent = new Intent(StockMarketToolsActivity.this, Volatilitaet.class);
-                StockMarketToolsActivity.this.startActivity(intent);
-            }
-        });
-        */
-
-
 
 
     @Override

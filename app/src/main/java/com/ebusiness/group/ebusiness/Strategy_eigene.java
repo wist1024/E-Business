@@ -2,6 +2,9 @@ package com.ebusiness.group.ebusiness;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -74,4 +77,14 @@ public class Strategy_eigene extends StrategyAreaActivity {
         });
     }
 
+/*
+    public boolean onKeyDown(int keycode, KeyEvent event) {
+        if (keycode == KeyEvent.KEYCODE_BACK) {
+            setContentView(R.layout.activity_strategy_area);
+            startActivity(new Intent(Strategy_eigene.this, StrategyAreaActivity.class));
+        }
+        return false;
+    }
+    */
 }
+

@@ -1,6 +1,8 @@
 package com.ebusiness.group.ebusiness;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -9,7 +11,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 /**
- * Created by stefan on 08.01.2016.
+ * Created by stephanie on 08.01.2016.
  */
 
 public class Strategy_Momentum extends StrategyAreaActivity {
@@ -32,7 +34,9 @@ public class Strategy_Momentum extends StrategyAreaActivity {
                 "7)\t Kaufen Sie die besten Aktien.\n" + "\n" +
                 "8)\t Wiederholen Sie den Vorgang wöchentlich.\n" + "\n" +
                 "9)\t Ist eine Aktie zu Beginn gekauft wurde, dabei in der Liste abrutscht und ins hintere Drittel der Liste gefallen, wird diese verkauft und an ihrer Stelle die Aktie mit der höchsten Platzierung gekauft.\n" +
-                "\n"
+
+
+                        "\n"
         };
 
         ListAdapter buckysAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strategys);
@@ -50,5 +54,8 @@ public class Strategy_Momentum extends StrategyAreaActivity {
             }
         });
     }
+
+
+
 
 }

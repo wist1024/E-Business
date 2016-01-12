@@ -20,14 +20,14 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aktien finden"
+        android:text="1 Schritt: Aktien finden"
         android:id="@+id/buttonaktien" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="326dp"
         android:layout_height="wrap_content"
-        android:text="Aktienrelevante Rechnungen"
+        android:text="2 Schritt: Aktienrelevante Rechnungen"
         android:id="@+id/boersentool" />
 
 
@@ -36,14 +36,14 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
-        android:text="bekannte Aktienstrategien"
+        android:text="3 Schritt: bekannte Aktienstrategien"
         android:id="@+id/strategy_area" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="318dp"
         android:layout_height="wrap_content"
-        android:text="relevante Wikilink"
+        android:text="4 Schritt: relevante Wikilink"
         android:id="@+id/wikilink" />
 
     <Button

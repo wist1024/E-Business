@@ -47,6 +47,22 @@
             android:label="Strategy_eigene"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity android:name=".Strategy_Dividenden"
+            android:label="Dividendenstrategie"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_value"
+            android:label="Value Strategie"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Saisonalitaet"
+            android:label="Strategy_Saisonalitaet"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Pennystock"
+            android:label="Strategy_Pennystcok"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".StockMarketActivity"
             android:label="@string/title_activity_stock_market"
