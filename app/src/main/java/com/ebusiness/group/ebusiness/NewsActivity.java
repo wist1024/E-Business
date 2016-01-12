@@ -2,9 +2,6 @@ package com.ebusiness.group.ebusiness;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,9 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.twitter.sdk.android.Twitter;
-import com.twitter.sdk.android.core.TwitterAuthConfig;
-import io.fabric.sdk.android.Fabric;
 
 public class NewsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -91,19 +85,11 @@ public class NewsActivity extends AppCompatActivity
             startActivity(intent);
             finish();
         } else if (id == R.id.nav_stockmarket) {
-            Intent intent = new Intent(this, StockMarketListActivity.class);
+            Intent intent = new Intent(this, StockMarketActivity.class);
             startActivity(intent);
             finish();
         } else if (id == R.id.nav_stockmarkettools) {
             Intent intent = new Intent(this, StockMarketToolsActivity.class);
-            startActivity(intent);
-            finish();
-        } else if (id == R.id.nav_settings) {
-            Intent intent = new Intent(this, SettingsActivity.class);
-            startActivity(intent);
-            finish();
-        } else if(id == R.id.nav_rss) {
-            Intent intent = new Intent(this, RssReaderActivity.class);
             startActivity(intent);
             finish();
         }

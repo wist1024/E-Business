@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ebusiness.group.ebusiness" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/title_activity_news"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TwitterActivity"
+            android:label="@string/title_activity_twitter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CheatsheetActivity"
+            android:label="@string/title_activity_cheatsheet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StrategyAreaActivity"
+            android:label="@string/title_activity_strategy_area"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Top_Flop"
+            android:label="Strategy_Top_Flop"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Momentum"
+            android:label="Strategy_Momentum"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_eigene"
+            android:label="Strategy_eigene"
+            android:theme="@style/AppTheme.NoActionBar" />
+        
+        <activity
+            android:name=".StockMarketActivity"
+            android:label="@string/title_activity_stock_market"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StockMarketToolsActivity"
+            android:label="@string/title_activity_stock_market_tools"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Volatilitaet"
+            android:label="Volatilität"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e95909373fa48a27d8d992744480b317915f9942" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="News" >
+        </activity>
+    </application>
+
+</manifest>

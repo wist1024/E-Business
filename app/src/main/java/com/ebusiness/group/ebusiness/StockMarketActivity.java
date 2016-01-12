@@ -2,9 +2,6 @@ package com.ebusiness.group.ebusiness;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -32,7 +29,6 @@ public class StockMarketActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
     }
 
     @Override
@@ -61,7 +57,6 @@ public class StockMarketActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            //startActivity(new Intent(getActivity(), StockMarketDetailActivity.class));
             return true;
         }
 
@@ -91,19 +86,9 @@ public class StockMarketActivity extends AppCompatActivity
             startActivity(intent);
             finish();
         } else if (id == R.id.nav_stockmarket) {
-            Intent intent = new Intent(this, StockMarketListActivity.class);
-            startActivity(intent);
-            finish();
+            // DO NOTHING - OWN ID!
         } else if (id == R.id.nav_stockmarkettools) {
             Intent intent = new Intent(this, StockMarketToolsActivity.class);
-            startActivity(intent);
-            finish();
-        }  else if(id == R.id.nav_settings) {
-            Intent intent = new Intent(this, SettingsActivity.class);
-            startActivity(intent);
-            finish();
-        }else if(id == R.id.nav_rss) {
-            Intent intent = new Intent(this, RssReaderActivity.class);
             startActivity(intent);
             finish();
         }
