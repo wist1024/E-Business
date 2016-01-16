@@ -26,6 +26,14 @@
             android:id="@+id/nav_stockmarkettools"
             android:icon="@drawable/ic_menu_manage"
             android:title="Börsen Tools" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_rss"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="RSS" />
     </group>
 
 </menu>
