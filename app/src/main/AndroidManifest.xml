@@ -34,6 +34,35 @@
             android:name=".StrategyAreaActivity"
             android:label="@string/title_activity_strategy_area"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Top_Flop"
+            android:label="Strategy_Top_Flop"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Momentum"
+            android:label="Strategy_Momentum"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_eigene"
+            android:label="Strategy_eigene"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Dividenden"
+            android:label="Dividendenstrategie"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_value"
+            android:label="Value Strategie"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Saisonalitaet"
+            android:label="Strategy_Saisonalitaet"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Strategy_Pennystock"
+            android:label="Strategy_Pennystcok"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".StockMarketActivity"
             android:label="@string/title_activity_stock_market"
@@ -43,35 +72,17 @@
             android:label="@string/title_activity_stock_market_tools"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity android:name=".Volatilitaet"
+            android:label="Volatilität"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="e95909373fa48a27d8d992744480b317915f9942" />
 
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" >
-        </activity>
-        <activity
-            android:name=".RssReaderActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
-            android:name=".StockMarketListActivity"
-            android:label="@string/title_stockmarket_list"
-            android:parentActivityName=".StockMarketActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ebusiness.group.ebusiness.StockMarketActivity" />
-        </activity>
-        <activity
-            android:name=".StockMarketDetailActivity"
-            android:label="@string/title_stockmarket_detail"
-            android:parentActivityName=".StockMarketListActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ebusiness.group.ebusiness.StockMarketListActivity" />
+            android:label="News" >
         </activity>
     </application>
 

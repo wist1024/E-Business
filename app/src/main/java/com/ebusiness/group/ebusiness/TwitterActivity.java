@@ -19,11 +19,9 @@ import com.twitter.sdk.android.core.Result;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.models.Tweet;
-import com.twitter.sdk.android.tweetui.CollectionTimeline;
 import com.twitter.sdk.android.tweetui.SearchTimeline;
 import com.twitter.sdk.android.tweetui.TimelineResult;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
-import com.twitter.sdk.android.tweetui.UserTimeline;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -146,14 +144,6 @@ public class TwitterActivity extends AppCompatActivity
             finish();
         } else if (id == R.id.nav_stockmarkettools) {
             Intent intent = new Intent(this, StockMarketToolsActivity.class);
-            startActivity(intent);
-            finish();
-        } else if (id == R.id.nav_settings) {
-            Intent intent = new Intent(this, SettingsActivity.class);
-            startActivity(intent);
-            finish();
-        } else if(id == R.id.nav_rss) {
-            Intent intent = new Intent(this, RssReaderActivity.class);
             startActivity(intent);
             finish();
         }
