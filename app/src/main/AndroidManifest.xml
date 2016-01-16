@@ -72,6 +72,13 @@
             android:label="@string/title_activity_stock_market_tools"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name=".SettingsActivity"
+            android:label="News" />
+        <activity
+            android:name=".RssReaderActivity"
+            android:label="News" />
+
         <activity android:name=".Volatilitaet"
             android:label="Volatilität"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -80,10 +87,6 @@
             android:name="io.fabric.ApiKey"
             android:value="e95909373fa48a27d8d992744480b317915f9942" />
 
-        <activity
-            android:name=".SettingsActivity"
-            android:label="News" >
-        </activity>
     </application>
 
 </manifest>
