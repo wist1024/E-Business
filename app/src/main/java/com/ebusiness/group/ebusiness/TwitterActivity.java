@@ -1,16 +1,21 @@
 package com.ebusiness.group.ebusiness;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ListView;
 
 import com.twitter.sdk.android.Twitter;
@@ -26,7 +31,7 @@ import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
 import io.fabric.sdk.android.Fabric;
 
 public class TwitterActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, SearchView.OnQueryTextListener {
 
     public ListView mainListView;
 
@@ -100,7 +105,14 @@ public class TwitterActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.twitter, menu);
-        return true;
+
+        // Associate searchable configuration with the SearchView
+        // SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.action_search));
+        // searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setOnQueryTextListener(this);
+
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -108,13 +120,6 @@ public class TwitterActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -161,4 +166,29 @@ public class TwitterActivity extends AppCompatActivity
         return true;
     }
 
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        final SearchTimeline timeline = new SearchTimeline.Builder().query(queryString).build();
+        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
+                .setTimeline(timeline)
+                .build();
+        mainListView.setAdapter(adapter);
+
+        // COLLAPSE KEYBOARD
+        InputMethodManager inputManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        queryString = "";
+        String[] hashtags = newText.split(" ");
+        for (int i = 0; i < hashtags.length; i++) {
+            queryString += "#" + hashtags[i] + " ";
+        }
+        Log.d("Critical","CHANGE TO:" + newText);
+        return true;
+    }
 }
